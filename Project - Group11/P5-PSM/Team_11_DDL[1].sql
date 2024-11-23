@@ -1,61 +1,9 @@
 
+DROP DATABASE STMS
+GO
 
 
-
--- Drop associative entity tables
-DROP TABLE IF EXISTS Accommodation_Certification;
-DROP TABLE IF EXISTS Certificate_Metric;
-DROP TABLE IF EXISTS Environmental_Metric;
-DROP TABLE IF EXISTS Economic_Metric;
-DROP TABLE IF EXISTS Business_Impact;
-DROP TABLE IF EXISTS Visits_Attraction;
-DROP TABLE IF EXISTS Collaborates_With;
-DROP TABLE IF EXISTS Partners_With;
-DROP TABLE IF EXISTS Organizes;
-DROP TABLE IF EXISTS Engages_With;
-DROP TABLE IF EXISTS Uses;
-DROP TABLE IF EXISTS Stays_At;
-DROP TABLE IF EXISTS Visits;
-
-
--- Drop original tables
-DROP TABLE IF EXISTS Carrying_Capacity_Alert;
-DROP TABLE IF EXISTS Educational_Content;
-DROP TABLE IF EXISTS Sustainability_Metric;
-DROP TABLE IF EXISTS Visitor_Review;
-DROP TABLE IF EXISTS Cultural_Heritage_Site;
-DROP TABLE IF EXISTS Economic_Impact;
-DROP TABLE IF EXISTS Environmental_Impact;
-DROP TABLE IF EXISTS Sustainability_Certification;
-DROP TABLE IF EXISTS Local_Business;
-DROP TABLE IF EXISTS Transportation_Provider;
-DROP TABLE IF EXISTS Attraction;
-DROP TABLE IF EXISTS Tour_Operator;
-DROP TABLE IF EXISTS Tourist;
-DROP TABLE IF EXISTS Accommodation;
-DROP TABLE IF EXISTS Destination;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- DDL Script
 
 
 CREATE DATABASE STMS;
@@ -389,3 +337,36 @@ CREATE TABLE Accommodation_Certification (
    Certification_Grade NVARCHAR(10),
    PRIMARY KEY (AccommodationID, CertificateID)
 );
+
+
+-- Drop original tables
+DROP TABLE IF EXISTS Carrying_Capacity_Alert;
+DROP TABLE IF EXISTS Educational_Content;
+DROP TABLE IF EXISTS Sustainability_Metric;
+DROP TABLE IF EXISTS Visitor_Review;
+DROP TABLE IF EXISTS Cultural_Heritage_Site;
+DROP TABLE IF EXISTS Economic_Impact;
+DROP TABLE IF EXISTS Environmental_Impact;
+DROP TABLE IF EXISTS Sustainability_Certification;
+DROP TABLE IF EXISTS Local_Business;
+DROP TABLE IF EXISTS Transportation_Provider;
+DROP TABLE IF EXISTS Attraction;
+DROP TABLE IF EXISTS Tour_Operator;
+DROP TABLE IF EXISTS Tourist;
+DROP TABLE IF EXISTS Accommodation;
+DROP TABLE IF EXISTS Destination;
+
+-- Drop associative entity tables
+DROP TABLE IF EXISTS Accommodation_Certification;
+DROP TABLE IF EXISTS Certificate_Metric;
+DROP TABLE IF EXISTS Environmental_Metric;
+DROP TABLE IF EXISTS Economic_Metric;
+DROP TABLE IF EXISTS Business_Impact;
+DROP TABLE IF EXISTS Visits_Attraction;
+DROP TABLE IF EXISTS Collaborates_With;
+DROP TABLE IF EXISTS Partners_With;
+DROP TABLE IF EXISTS Organizes;
+DROP TABLE IF EXISTS Engages_With;
+DROP TABLE IF EXISTS Uses;
+DROP TABLE IF EXISTS Stays_At;
+DROP TABLE IF EXISTS Visits;
